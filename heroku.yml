@@ -1,6 +1,4 @@
 
-FROM golang:1.14.2-stretch
-
-ENV CGO_ENABLED=1
-ENV GOOS=linux
-ENV GOARCH=amd64
+build:
+  docker:
+    web: docker/Dockerfile
